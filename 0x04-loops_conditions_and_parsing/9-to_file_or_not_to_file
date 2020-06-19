@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#check file
+
+if [ -e "holbertonschool" ]
+then
+	echo "holbertonschool file exists"
+	if [ -f "holbertonschool" ]
+	then
+		echo "holbertonschool is a regular file"
+	fi
+
+	if [ -s "holbertonschool" ]
+	then
+		echo "holbertonschool file is empty"
+	else
+		echo "holbertonschool file is not empty"
+	fi
+
+else
+	echo "holbertonschool file does not exist"
+fi
