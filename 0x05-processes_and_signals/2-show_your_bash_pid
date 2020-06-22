@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#display bash id
+
+ps -faux | grep "bash"
