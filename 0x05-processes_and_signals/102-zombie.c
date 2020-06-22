@@ -16,7 +16,7 @@ int main(void)
 		my_pid = fork();
 
 		if (my_pid)
-			printf("Zombie process created, PID: %d", my_pid);
+			printf("Zombie process created, PID: %d\n", my_pid);
 		else
 			exit(0);
 	}
