@@ -6,6 +6,10 @@
 
 int infinite_while(void);
 
+/**
+ * main - main function
+ * Return: 0
+ */
 int main(void)
 {
 	pid_t my_pid;
@@ -25,11 +29,15 @@ int main(void)
 	return (EXIT_SUCCESS);
 }
 
+/**
+ * infinite_while - loop
+ * Return: 0
+ */
 int infinite_while(void)
 {
-    while (1)
-    {
-        sleep(1);
-    }
-    return (0);
+	while (1)
+	{
+		sleep(1);
+	}
+	return (0);
 }
