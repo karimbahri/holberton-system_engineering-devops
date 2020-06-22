@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# kill trapped process
+pkill -SIGKILL -f 7-highlander
