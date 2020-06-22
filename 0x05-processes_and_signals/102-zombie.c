@@ -4,19 +4,7 @@
 #include <sys/stat.h>
 #include <sys/wait.h>
 
-/**
- * infinite_while - loop
- * Return: 0
- */
-int infinite_while(void)
-{
-	while (1)
-	{
-		sleep(1);
-	}
-	return (0);
-}
-
+int infinite_while(void);
 
 /**
  * main - main function
@@ -31,7 +19,7 @@ int main(void)
 	{
 		my_pid = fork();
 
-		if (my_pid)
+		if (my_pid > 0)
 			printf("Zombie process created, PID: %d\n", my_pid);
 		else
 			exit(0);
@@ -39,4 +27,17 @@ int main(void)
 	infinite_while();
 
 	return (EXIT_SUCCESS);
+}
+
+/**
+ * infinite_while - loop
+ * Return: 0
+ */
+int infinite_while(void)
+{
+	while (1)
+	{
+		sleep(1);
+	}
+	return (0);
 }
