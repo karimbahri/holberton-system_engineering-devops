@@ -4,7 +4,19 @@
 #include <sys/stat.h>
 #include <sys/wait.h>
 
-int infinite_while(void);
+/**
+ * infinite_while - loop
+ * Return: 0
+ */
+int infinite_while(void)
+{
+	while (1)
+	{
+		sleep(1);
+	}
+	return (0);
+}
+
 
 /**
  * main - main function
@@ -27,17 +39,4 @@ int main(void)
 	infinite_while();
 
 	return (EXIT_SUCCESS);
-}
-
-/**
- * infinite_while - loop
- * Return: 0
- */
-int infinite_while(void)
-{
-	while (1)
-	{
-		sleep(1);
-	}
-	return (0);
 }
