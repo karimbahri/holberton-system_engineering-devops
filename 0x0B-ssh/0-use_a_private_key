@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# login to a server using ssh protocol
+ssh -i ~/.ssh/holberton ubuntu@104.196.67.140
