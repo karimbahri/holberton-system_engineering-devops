@@ -23,4 +23,3 @@
 * Pythonic Constant name style
 
 * Significance of CapWords or CamelCase in Python
-
