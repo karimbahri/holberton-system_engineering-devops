@@ -59,7 +59,7 @@ server {
                 # First attempt to serve request as file, then
                 # as directory, then fall back to displaying a 404.
                 include proxy_params;
-                proxy_pass http://localhost:5002/;
+                proxy_pass http://localhost:5002/api/;
         }
 	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
 	#
