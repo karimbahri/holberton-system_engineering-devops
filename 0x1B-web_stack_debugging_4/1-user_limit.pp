@@ -1,6 +1,6 @@
 # manifest
-exec { 'manifest':
-  path    => ['/usr/bin', '/bin'],
+exec { 'limit':
+  path    => ['/bin'],
   command => 'sed -i \'s/^ULIMIT=.*/ULIMIT="-n 4096"/g\' /etc/default/nginx',
 }
 
