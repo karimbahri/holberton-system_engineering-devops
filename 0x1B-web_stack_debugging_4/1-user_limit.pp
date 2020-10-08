@@ -1,6 +1,6 @@
 # manifest
 exec { 'limit':
-  path    => ['/bin'],
+  path    => ['/bin', '/usr/bin'],
   command => 'sudo sed -i "s/15/3000/g" /etc/default/nginx',
 }
 
