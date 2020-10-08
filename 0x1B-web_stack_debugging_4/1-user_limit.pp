@@ -1,7 +1,7 @@
 # manifest
 exec { 'manifest':
 path    => ['/bin'],
-command => "sudo sed -i 's/ULIMIT=/#ULIMIT=/g' /etc/default/nginx",
+command => "sudo sed -i 's/^ULIMIT=.*/ULIMIT=\"-n 4096\"/g' /etc/default/nginx",
 }
 
 -> exec { 'reload':
