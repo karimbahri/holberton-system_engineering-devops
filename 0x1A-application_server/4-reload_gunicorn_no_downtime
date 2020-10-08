@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# reload
+pkill -PHU gunicorn
